@@ -1,0 +1,244 @@
+$bg-color: #fff;
+$my-light-grey: #898989;
+$my-grey: #555;
+$my-black: #010101;
+$my-light-black: #313841;
+$my-yellow: #fcdb00;
+$touch-bg-color: #010101;
+$footer-bg-color: #010101;
+$icon-color: #010101;
+$hover-color: #f00;
+$credits-color: #fff;
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: $bg-color;
+    color: $my-light-grey;
+}
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/*============header================*/
+
+.header {
+    background: $my-yellow;
+}
+.logo-link {
+    display: inline-block;
+    margin-top: 4rem;
+}
+.menu {
+    margin-top: 4.3rem;
+}
+.menu .menu__item {
+    
+}
+.menu__item a {
+    color: $my-black;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.menu__item a:hover {
+    color: $hover-color;
+    transition: all 0.5s;
+}
+.offer {
+    margin-top: 8.1rem;
+    
+}
+.offer__title {
+    color: $my-black;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.offer__intro {
+    margin-top: 1.5rem;
+    color: $my-light-black;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+.offer__text {
+    margin-top: 1.5rem;
+    color: $my-grey;
+    line-height: 1.3rem;
+}
+.offer__links {
+    margin-top: 2.5rem;
+}
+.offer__links i {
+    margin-right: 1.5rem;
+    color: $my-black;
+    font-size: 2.63rem;
+}
+.offer__links a:last-child i {
+    margin-right: 0;
+}
+.offer__links i:hover {
+    color: $hover-color;
+    transition: all 0.5s; 
+}
+.ipad {
+    display: block;
+    margin: 4.3rem auto 6.6rem auto;
+}
+
+/*============/header================*/
+
+/*============.features==============*/
+.features {
+    padding-bottom: 4.9rem;
+}
+.title {
+    margin-top: 7.1rem;
+    margin-bottom: 5.6rem;
+}
+.title__main {
+    color: $my-black;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+.title__text {
+    margin-top: 1.3rem;
+    color: $my-light-black;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.7rem;
+}
+.feature {
+    margin-bottom: 5.37rem;
+}
+.feature__wrap {
+    margin-right: 2.25rem;
+}
+.feature__icon {
+    color: $my-black;
+    font-size: 3.12rem;
+    width: 50px;
+}
+.feature__block {
+
+}
+.feature__title {
+    color: $my-black;
+    font-size: 1.37rem;
+}
+.feature__text {
+    line-height: 1.4rem;
+    margin-top: 0.5rem;
+}   
+
+/*============/.features==============*/
+
+/*==============/touch==============*/
+
+.touch {
+    background: $touch-bg-color;
+}
+.yellow {
+    color: $my-yellow;
+}
+.grey {
+    color: $my-light-grey;
+}
+.form {
+    margin-top: -3rem;
+}
+.form__group {
+    width: 60%;
+}
+.form__group .form__input {
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+}
+.form__btn {
+    font-family: 'PT Sans', sans-serif;
+    background: $my-yellow;
+    text-transform: uppercase;
+}
+
+/*============/.touch==============*/
+
+/*============.footer==============*/
+
+.footer {
+    background: $my-black;
+}
+.credits {
+    color: $credits-color;
+    text-align: center;
+    margin: 3.12rem 0 6.25rem;
+}
+/*============/.footer==============*/
+
+/*============@media==============*/
+
+@media screen and (max-width: 991px) {
+    .logo-wrap {
+        display: flex;
+        justify-content: center;
+    }  
+    .offer {
+        margin-top: 4rem;
+        text-align: center;
+    } 
+    .ipad {
+        margin: 4.3rem auto 4.3rem auto;
+    }
+    .title {
+        margin-top: 4.3rem;
+        margin-bottom: 4.3rem;
+    }
+    .features {
+        padding-bottom: 0;
+    }
+    .credits {
+        margin: 3.12rem 0 3.12rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .logo-link {
+        margin-top: 2rem;
+    } 
+    .menu {
+        margin-top: 2rem;
+    }
+    .offer {
+        margin-top: 2rem;
+        text-align: center;    
+    } 
+    .ipad {
+        margin: 2.5rem auto 2.5rem auto;
+    }
+    .title {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .feature {
+        margin-bottom: 1.5rem;
+    }
+    .form {
+        margin-top: 0;
+    }
+    .title {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__group {
+        width: 100%;
+    }
+    .form__btn {
+        margin-top: 1rem;
+    }
+}
+
+/*============/@media==============*/
